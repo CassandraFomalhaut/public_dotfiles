@@ -1,0 +1,55 @@
+theme = "gruvbox-dark"
+icons = "awesome5"
+
+[[block]]
+block = "memory"
+format_mem = "{mem_used} /{mem_total}"
+format_swap = "{swap_used}/{swap_total}"
+display_type = "memory"
+icons = true
+clickable = true
+interval = 5
+warning_mem = 80
+warning_swap = 80
+critical_mem = 95
+critical_swap = 95
+
+[[block]]
+block = "cpu"
+interval = 1
+format = "{barchart} {utilization} {frequency}"
+
+[[block]]
+block = "networkmanager"
+on_click = "kitty -e nmtui"
+interface_name_include = ["wlan0|azirevpn"]
+interface_name_exclude = ["br\\-[0-9a-f]{12}", "docker\\d+"]
+ap_format = "{ssid^10}"
+
+[[block]]
+block = "pacman"
+interval = 600
+format = "{pacman} + {aur} = {both} updates"
+format_singular = "{both} update"
+format_up_to_date = "ok"
+critical_updates_regex = "(linux-lts)"
+aur_command = "pikaur -Qua"
+
+[[block]]
+block = "sound"
+step_width = 3
+
+[[block]]
+block = "backlight"
+device = "intel_backlight"
+
+[[block]]
+block = "time"
+format = "%a %d/%m %R"
+timezone = "Europe/Helsinki"
+interval = 60
+locale = "en_US"
+
+[[block]]
+block = "battery"
+interval = 10

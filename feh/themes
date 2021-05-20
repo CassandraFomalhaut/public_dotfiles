@@ -1,0 +1,5 @@
+default \
+  --draw-actions \
+  --draw-filename \
+  --force-aliasing \
+  --no-fehbg \

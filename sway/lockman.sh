@@ -1,0 +1,30 @@
+#!/bin/sh
+swaylock \
+	--screenshots \
+	--font "Fira Code Nerd Font" \
+	--text-color fe8019 \
+	--ring-color fe8019 \
+	--key-hl-color 689d6a \
+	--line-clear-color 3c3836 \
+	--ring-clear-color 3c3836 \
+	--inside-clear-color 3c3836 \
+	--text-clear-color ebdbb2 \
+	--line-wrong-color fb4934 \
+	--ring-wrong-color fb4934 \
+	--text-wrong-color 1d2021 \
+	--inside-wrong-color fb4934 \
+	--line-ver-color 8ec07c \
+	--ring-ver-color 8ec07c \
+	--text-ver-color 1d2021 \
+	--inside-ver-color 8ec07c \
+	--line-color 00000000 \
+	--inside-color 1d2021 \
+	--separator-color 00000000 \
+	--clock \
+	--indicator \
+	--indicator-radius 100 \
+	--indicator-thickness 7 \
+	--grace 1 \
+	--fade-in 0.2 \
+	--effect-pixelate 15 \
+	--disable-caps-lock-text \

@@ -1,0 +1,55 @@
+# Keybindings
+bind-key        j           next
+bind-key        k           prev
+bind-key        J           next-feed
+bind-key        K           prev-feed
+bind-key        j           down article
+bind-key        k           up article
+bind-key        J           next article
+bind-key        K           prev article
+bind-key        l           open
+bind-key        h           quit
+
+# News settings
+max-items                   10
+text-width                  79
+browser                     firefox
+prepopulate-query-feeds     yes
+goto-next-feed              no
+feedlist-format             "%4n %9u %t"
+articlelist-title-format    "%N %V - '%T' (%u unread, %t total)"
+auto-reload yes
+reload-time 120
+reload-threads 100
+download-retries 5
+download-timeout 60
+browser "firefox %u"
+macro y set browser "mpv %u" ; open-in-browser ; set browser "firefox %u"
+macro , set browser "firefox %u"; open-in-browser
+error-log "~/.newsboat/error.log"
+
+# List
+color listnormal white default
+color listfocus black yellow standout bold
+color listnormal_unread blue default
+color listfocus_unread yellow default bold
+color info white black bold
+color article color15 default
+
+# Article
+highlight all "---.*---" yellow
+highlight feedlist ".*(0/0))" black
+highlight article "(^Feed:.*|^Title:.*|^Author:.*)" cyan default bold
+highlight article "(^Link:.*|^Date:.*)" default default
+highlight article "https?://[^ ]+" green default
+highlight article "^(Title):.*$" blue default
+highlight article "\\[[0-9][0-9]*\\]" magenta default bold
+highlight article "\\[image\\ [0-9]+\\]" green default bold
+highlight article "\\[embedded flash: [0-9][0-9]*\\]" green default bold
+highlight article ":.*\\(link\\)$" cyan default
+highlight article ":.*\\(image\\)$" blue default
+highlight article ":.*\\(embedded flash\\)$" magenta default
+
+# Separator
+highlight feedlist "---.*---" color15 default bold
+highlight feedlist ".*0/0.." default default invis

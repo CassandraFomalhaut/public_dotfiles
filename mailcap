@@ -1,0 +1,7 @@
+image/gif; mpv '%s' --autofit=640x480 --loop=inf; test=test -n "$DISPLAY"
+image/*; feh -g 640x480 -w --auto-zoom -. '%s'; test=test -n "$DISPLAY"
+video/x-youtube; mpv --ytdl-format=bestvideo+bestaudio/best '%s' --autofit=1920x800; test=test -n "$DISPLAY"
+video/*; mpv '%s' --autofit=1920x800 --loop=inf; test=test -n "$DISPLAY"
+text/html; open -a Firefox "%s"
+text/plain; less "%s"
+text/*; vim "%s"

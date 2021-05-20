@@ -1,0 +1,13 @@
+term=kitty
+allow_images=true
+allow_markup=true
+insensitive=true
+hide_scroll=true
+lines=10
+image_size=24
+no_actions=true
+width=600
+show=drun
+key_down=Control_L-j
+key_up=Control_L-k
+
