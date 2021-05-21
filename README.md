@@ -22,16 +22,16 @@
                     `-'
 ```
 ---
-* WM: Sway
-* Bar: i3status-rust
-* Shell: zsh
-* Term: kitty
-* Editor: Neovim
-* File manager: Ranger
-* Font: Fira Code Nerd Font
-* PDF reader: Zathura
-* RSS reader: Newsboat
-* TUI: ttrv (reddit), tg (telegram), cointop (crypto), tickrs (stonks), bottom (top), spotify-tui
+* WM: [Sway](https://github.com/swaywm/sway)
+* Bar: [i3status-rust](https://github.com/greshake/i3status-rust)
+* Shell: [zsh](https://github.com/zsh-users/zsh) + [ohmyzsh](https://github.com/ohmyzsh) with [powervel10k](https://github.com/romkatv/powerlevel10k)
+* Term: [kitty](https://github.com/cyd01/KiTTY)
+* Editor: [Neovim](https://github.com/neovim/neovim)
+* File manager: [Ranger](https://github.com/ranger/ranger)
+* Font: [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts)
+* PDF reader: [Zathura](https://github.com/pwmt/zathura)
+* RSS reader: [Newsboat](https://github.com/newsboat/newsboat)
+* TUI: [ttrv](https://github.com/tildeclub/ttrv) (reddit), [tg](https://github.com/paul-nameless/tg) (telegram), [cointop](https://github.com/miguelmota/cointop) (crypto), [tickrs](https://github.com/tarkah/tickrs) (stonks), [bottom](https://github.com/clementtsang/bottom) (top), [spotify-tui](https://github.com/Rigellute/spotify-tui)
 
 ---
 
