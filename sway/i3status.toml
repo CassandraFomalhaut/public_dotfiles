@@ -33,7 +33,7 @@ format = "{pacman} + {aur} = {both} updates"
 format_singular = "{both} update"
 format_up_to_date = "ok"
 critical_updates_regex = "(linux-lts)"
-aur_command = "pikaur -Qua"
+aur_command = "pikaur -Qu"
 
 [[block]]
 block = "sound"
