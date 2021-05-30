@@ -62,7 +62,7 @@ sudo pacman -S --noconfirm --needed rsync cronie lsof dmidecode rlwrap cmake cla
 
 pikaur -S  --noconfirm --needed pfetch netdiscover xfce-polkit-git
 
-cargo install bottom bat exa ripgrep
+cargo install bottom bat exa ripgrep onefetch
 
 sudo usermod -aG docker $USER
 sudo chmod u+s /usr/bin/brightnessctl
