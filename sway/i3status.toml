@@ -29,11 +29,12 @@ ap_format = "{ssid^10}"
 [[block]]
 block = "pacman"
 interval = 600
-format = "{pacman} + {aur} = {both} updates"
-format_singular = "{both} update"
+format = "{pacman} + {aur} = {both} updates available"
+format_singular = "{both} update available"
 format_up_to_date = "ok"
-critical_updates_regex = "(linux-lts)"
-aur_command = "pikaur -Qu"
+critical_updates_regex = "(linux|linux-lts|linux-zen)"
+# aur_command should output available updates to stdout (ie behave as echo -ne "update\n")
+aur_command = "pikaur -Qua"
 
 [[block]]
 block = "sound"
